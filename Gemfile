@@ -23,8 +23,8 @@ group :development do
 end
 
 group :test do
+  gem 'pry'
   gem 'vcr'
   gem 'webmock'
   gem 'capybara'
 end
-
