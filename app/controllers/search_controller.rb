@@ -1,5 +1,7 @@
 class SearchController < ApplicationController
   def index
-    render locals: {fuels: FuelFacade.new(params[:q])}
+    render locals: {
+      fuels: FuelFacade.new(params[:q])
+    }
   end
 end
