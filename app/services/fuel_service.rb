@@ -8,6 +8,10 @@ class FuelService
     data["total_results"]
   end
 
+  def stations
+    data["fuel_stations"]
+  end
+
   private
   def data
     JSON.parse(conn)
