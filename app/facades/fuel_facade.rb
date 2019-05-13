@@ -5,13 +5,14 @@ class FuelFacade
   end
 
   def total_results
-    FuelService.new(zip_code)
-    binding.pry
-    results = FuelService.data
+    fuel_data.get_station_count
   end
 
   private
 
+  def fuel_data
+    @_fuel_data ||= FuelService.new(@zip_code)
+  end
 
 
 
